@@ -1,0 +1,24 @@
+name: first-pipeline
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest  
+
+        steps:
+            - name: Say Hello
+              run: echo "hello"
+
+            - name: Code Copy
+              uses: actions/checkout@v4
+
+            - name: PWD
+              run : pwd
+
+            - name: List Files
+              run: ls
+
