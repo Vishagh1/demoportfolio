@@ -16,9 +16,7 @@ jobs:
             - name: Code Copy
               uses: actions/checkout@v4
 
-            - name: PWD
-              run : pwd
-
+        
             - name: List Files
               run: ls
 
