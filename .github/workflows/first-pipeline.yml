@@ -10,13 +10,10 @@ jobs:
         runs-on: ubuntu-latest  
 
         steps:
-            - name: Say Hello
-              run: echo "hello"
-
+        
             - name: Code Copy
               uses: actions/checkout@v4
 
         
-            - name: List Files
-              run: ls
+            
 
