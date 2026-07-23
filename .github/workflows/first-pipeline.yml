@@ -7,13 +7,11 @@ on:
 
 jobs:
     first-job:
-        runs-on: ubuntu-latest  
+        runs-on: ubuntu-latest
 
         steps:
-        
             - name: Code Copy
               uses: actions/checkout@v4
 
-        
-            
-
+            - name: Build Image
+              run: docker build -t dckrimg .
